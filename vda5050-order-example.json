@@ -1,0 +1,78 @@
+{
+  "headerId": 1,
+  "timestamp": "2026-03-13T12:00:00Z",
+  "version": "2.0",
+  "manufacturer": "fraunhofer_iml",
+  "serialNumber": "S123",
+  "orderId": "order-001",
+  "orderUpdateId": 0,
+  "nodes": [
+    {
+      "nodeId": "Point-0001",
+      "sequenceId": 1,
+      "nodePosition": {
+        "x": 31000,
+        "y": 11000,
+        "theta": 0,
+        "mapId": "Demo-01"
+      },
+      "actions": [
+        {
+          "actionId": "pick-action-001",
+          "actionType": "Pick",
+          "blockingType": "HARD",
+          "actionParameters": [
+            {
+              "key": "loadId",
+              "value": "load-001"
+            },
+            {
+              "key": "loadPosition",
+              "value": "front"
+            }
+          ]
+        }
+      ],
+      "released": true
+    },
+    {
+      "nodeId": "Point-0003",
+      "sequenceId": 2,
+      "nodePosition": {
+        "x": 31000,
+        "y": 5000,
+        "theta": 0,
+        "mapId": "Demo-01"
+      },
+      "actions": [
+        {
+          "actionId": "drop-action-001",
+          "actionType": "Drop",
+          "blockingType": "HARD",
+          "actionParameters": [
+            {
+              "key": "loadId",
+              "value": "load-001"
+            },
+            {
+              "key": "targetPosition",
+              "value": "Point-0003"
+            }
+          ]
+        }
+      ],
+      "released": true
+    }
+  ],
+  "edges": [
+    {
+      "edgeId": "Point-0001 --- Point-0003",
+      "sequenceId": 1,
+      "startNodeId": "Point-0001",
+      "endNodeId": "Point-0003",
+      "actions": [],
+      "released": true
+    }
+  ],
+  "zoneSetId": ""
+}

@@ -19,6 +19,8 @@ dependencies {
   api project(':opentcs-plantoverview-common')
   api project(':opentcs-plantoverview-themes-default')
 
+//  implementation libs.opentcs-commadapter-vda5050
+
   runtimeOnly libs.slf4j.jdk14
 }
 

@@ -24,7 +24,7 @@ dependencies {
   api project(':opentcs-kernel-extension-rmi-services')
 
   implementation libs.huxhorn.sulky.ulid
-
+  implementation project(':opentcs-commadapter-vda5050')
   runtimeOnly libs.slf4j.jdk14
 }
 

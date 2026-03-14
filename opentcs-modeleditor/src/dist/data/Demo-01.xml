@@ -738,26 +738,43 @@
         <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
         <property name="loopback:loadOperation" value="Load cargo"/>
         <property name="loopback:unloadOperation" value="Unload cargo"/>
+        <property name="vda5050:manufacturer" value="ExampleManufacturer"/>
+        <property name="vda5050:serialNumber" value="VEH001"/>
+        <property name="vda5050:interfaceName" value="VDA5050"/>
+        <property name="vda5050:version" value="1.1"/>
         <vehicleLayout color="#FF0000"/>
     </vehicle>
     <vehicle name="Vehicle-02" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="45" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="envelope-a">
         <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
         <property name="loopback:loadOperation" value="Load cargo"/>
         <property name="loopback:unloadOperation" value="Unload cargo"/>
+        <property name="vda5050:manufacturer" value="ExampleManufacturer"/>
+        <property name="vda5050:serialNumber" value="VEH002"/>
+        <property name="vda5050:interfaceName" value="VDA5050"/>
+        <property name="vda5050:version" value="1.1"/>
         <vehicleLayout color="#33FF00"/>
     </vehicle>
     <vehicle name="Vehicle-03" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="45" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="envelope-a">
         <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
         <property name="loopback:loadOperation" value="Load cargo"/>
         <property name="loopback:unloadOperation" value="Unload cargo"/>
-        <vehicleLayout color="#00FFFF"/>
+        <property name="vda5050:manufacturer" value="ExampleManufacturer"/>
+        <property name="vda5050:serialNumber" value="VEH003"/>
+        <property name="vda5050:interfaceName" value="VDA5050"/>
+        <property name="vda5050:version" value="1.1"/>
+        <vehicleLayout color="#0033FF"/>
     </vehicle>
     <vehicle name="Vehicle-04" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="45" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="envelope-a">
         <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
         <property name="loopback:loadOperation" value="Load cargo"/>
         <property name="loopback:unloadOperation" value="Unload cargo"/>
-        <vehicleLayout color="#FF33FF"/>
+        <property name="vda5050:manufacturer" value="ExampleManufacturer"/>
+        <property name="vda5050:serialNumber" value="VEH004"/>
+        <property name="vda5050:interfaceName" value="VDA5050"/>
+        <property name="vda5050:version" value="1.1"/>
+        <vehicleLayout color="#00FFFF"/>
     </vehicle>
+
     <locationType name="Fire door">
         <allowedPeripheralOperation name="Close"/>
         <allowedPeripheralOperation name="Open"/>
