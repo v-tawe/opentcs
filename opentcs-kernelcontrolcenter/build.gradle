@@ -17,11 +17,11 @@ dependencies {
   api project(':opentcs-api-injection')
   api project(':opentcs-common')
   api project(':opentcs-commadapter-loopback')
+  api project(':opentcs-commadapter-seer')
   api project(':opentcs-peripheralcommadapter-loopback')
   api project(':opentcs-impl-configuration-gestalt')
 
   implementation project(':opentcs-commadapter-vda5050')
-
   runtimeOnly libs.slf4j.jdk14
 }
 

@@ -76,37 +76,12 @@
     <path name="Point-0008 --- Point-0003" sourcePoint="Point-0008" destinationPoint="Point-0003" length="16808" maxVelocity="1000" maxReverseVelocity="0" locked="false">
         <pathLayout connectionType="DIRECT" layerId="0"/>
     </path>
-    <vehicle name="Vehicle-0001" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
+    <vehicle name="Vehicle-0005" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
         <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
-        <property name="vda5050:interfaceName" value="VDA5050"/>
-        <property name="vda5050:manufacturer" value="fraunhofer_iml"/>
-        <property name="vda5050:serialNumber" value="S123"/>
-        <property name="vda5050:version" value="2.0"/>
-        <vehicleLayout color="#FF0000"/>
-    </vehicle>
-    <vehicle name="Vehicle-0002" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
-        <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
-        <property name="vda5050:interfaceName" value="VDA5050"/>
-        <property name="vda5050:manufacturer" value="fraunhofer_iml"/>
-        <property name="vda5050:serialNumber" value="S124"/>
-        <property name="vda5050:version" value="2.0"/>
-        <vehicleLayout color="#0000FF"/>
-    </vehicle>
-    <vehicle name="Vehicle-0003" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
-        <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
-        <property name="vda5050:interfaceName" value="VDA5050"/>
-        <property name="vda5050:manufacturer" value="fraunhofer_iml"/>
-        <property name="vda5050:serialNumber" value="S125"/>
-        <property name="vda5050:version" value="2.0"/>
-        <vehicleLayout color="#00FFFF"/>
-    </vehicle>
-    <vehicle name="Vehicle-0004" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
-        <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
-        <property name="vda5050:interfaceName" value="VDA5050"/>
-        <property name="vda5050:manufacturer" value="fraunhofer_iml"/>
-        <property name="vda5050:serialNumber" value="S126"/>
-        <property name="vda5050:version" value="2.0"/>
-        <vehicleLayout color="#FFFF00"/>
+        <property name="initialPosition" value="Point-0001"/>
+        <property name="modbusIp" value="127.0.0.1"/>
+        <property name="modbusPort" value="10503"/>
+        <vehicleLayout color="#FF00FF"/>
     </vehicle>
     <locationType name="LType-0001">
         <allowedOperation name=""/>
@@ -150,5 +125,5 @@
         <layer id="0" ordinal="0" visible="true" name="Default layer" groupId="0"/>
         <layerGroup id="0" name="Default layer group" visible="true"/>
     </visualLayout>
-    <property name="tcs:modelFileLastModified" value="2026-03-13T13:02:23Z"/>
+    <property name="tcs:modelFileLastModified" value="2026-03-14T05:22:57Z"/>
 </model>
