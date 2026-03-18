@@ -3,7 +3,7 @@
 
 apply plugin: 'java-library'
 apply plugin: 'jacoco'
-apply plugin: 'com.diffplug.spotless'
+// apply plugin: 'com.diffplug.spotless'
 
 base.archivesName = name.toLowerCase()
 
@@ -76,12 +76,12 @@ ext {
   testSrcDir = sourceSets.test.java.srcDirs[0]
 }
 
-spotless {
-  java {
-    // Use the default import order configuration
-    importOrder()
-
-    // Use the Eclipse JDT formatter
-    eclipse('4.38').configFile("${rootDir}/config/eclipse-formatter-preferences.xml")
-  }
-}
+//spotless {
+//  java {
+//    // Use the default import order configuration
+//    importOrder()
+//
+//    // Use the Eclipse JDT formatter
+//    eclipse('4.38').configFile("${rootDir}/config/eclipse-formatter-preferences.xml")
+//  }
+//}

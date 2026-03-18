@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  */
 public class SeerCommAdapterModule
     extends
-    KernelInjectionModule {
+      KernelInjectionModule {
 
   /**
    * This class's logger.
