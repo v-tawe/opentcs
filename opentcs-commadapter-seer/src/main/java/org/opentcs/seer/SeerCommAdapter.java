@@ -2,14 +2,14 @@
 // SPDX-License-Identifier: MIT
 package org.opentcs.seer;
 
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import static java.util.Objects.requireNonNull;
 
 import com.google.inject.assistedinject.Assisted;
 import jakarta.annotation.Nonnull;
 import jakarta.inject.Inject;
 import java.beans.PropertyChangeEvent;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -331,9 +331,12 @@ public class SeerCommAdapter
   /**
    * Connects to the vehicle via Modbus TCP.
    */
-  private void connectModbus() throws Exception {
+  private void connectModbus()
+      throws Exception {
     String ipAddress = vehicle.getProperties().get(SeerAdapterConstants.PROPKEY_MODBUS_IP);
-    int port = Integer.parseInt(vehicle.getProperties().get(SeerAdapterConstants.PROPKEY_MODBUS_PORT));
+    int port = Integer.parseInt(
+        vehicle.getProperties().get(SeerAdapterConstants.PROPKEY_MODBUS_PORT)
+    );
     if (ipAddress == null || ipAddress.isEmpty()) {
       throw new IllegalArgumentException("Modbus IP address or Port is not set");
     }
@@ -390,6 +393,7 @@ public class SeerCommAdapter
 
   /**
    * 将两个 16 位寄存器的值转换为一个 32 位浮点数
+   * 
    * @param reg1 第一个寄存器的值（高16位）
    * @param reg2 第二个寄存器的值（低16位）
    * @return 转换后的浮点数
@@ -460,7 +464,9 @@ public class SeerCommAdapter
         // 更新电量
         getProcessModel().setEnergyLevel(battery);
         // 更新位置
-        getProcessModel().setPose(getProcessModel().getPose().withPosition(new Triple((long) x,(long) y, (long) z)));
+        getProcessModel().setPose(
+            getProcessModel().getPose().withPosition(new Triple((long) x, (long) y, (long) z))
+        );
       }
     }
     catch (Exception e) {
