@@ -57,5 +57,5 @@ run {
                     'opentcs.configuration.reload.interval':'10000',\
                     'opentcs.configuration.provider':'gestalt'])
   jvmArgs('-XX:-OmitStackTraceInFastThrow',\
-          '-splash:bin/splash-image.gif')
+          '-splash:bin/jabiltcs_logo.gif')
 }

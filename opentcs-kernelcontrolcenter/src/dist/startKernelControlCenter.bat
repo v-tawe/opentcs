@@ -33,5 +33,5 @@ start /b %JAVA% -enableassertions ^
     -Djava.util.logging.config.file="%OPENTCS_CONFIGDIR%\logging.config" ^
     -XX:-OmitStackTraceInFastThrow ^
     -classpath "%OPENTCS_CP%" ^
-    -splash:bin/splash-image.gif ^
+    -splash:bin/jabiltcs_logo.gif ^
     org.opentcs.kernelcontrolcenter.RunKernelControlCenter
