@@ -68,7 +68,7 @@ public class AboutDialog
     logoPanel.setLayout(new java.awt.BorderLayout());
 
     opentcsLogoLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    opentcsLogoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/kernelcontrolcenter/res/logos/opentcs.gif"))); // NOI18N
+    opentcsLogoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/kernelcontrolcenter/res/logos/jabiltcs_logo.png"))); // NOI18N
     logoPanel.add(opentcsLogoLbl, java.awt.BorderLayout.CENTER);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
