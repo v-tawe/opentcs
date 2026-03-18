@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model version="7.0.0" name="Demo-03">
+    <point name="Point-0001" positionX="355" positionY="1922" positionZ="0" vehicleOrientationAngle="NaN" type="HALT_POSITION">
+        <maxVehicleBoundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
+        <outgoingPath name="Point-0001 --- Point-0002"/>
+        <outgoingPath name="Point-0001 --- Point-0003"/>
+        <pointLayout labelOffsetX="-10" labelOffsetY="-20" layerId="0"/>
+    </point>
+    <point name="Point-0002" positionX="2176" positionY="232" positionZ="0" vehicleOrientationAngle="NaN" type="HALT_POSITION">
+        <maxVehicleBoundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
+        <outgoingPath name="Point-0002 --- Point-0001"/>
+        <outgoingPath name="Point-0002 --- Point-0003"/>
+        <pointLayout labelOffsetX="-10" labelOffsetY="-20" layerId="0"/>
+    </point>
+    <point name="Point-0003" positionX="2614" positionY="1922" positionZ="0" vehicleOrientationAngle="NaN" type="HALT_POSITION">
+        <maxVehicleBoundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
+        <outgoingPath name="Point-0003 --- Point-0001"/>
+        <outgoingPath name="Point-0003 --- Point-0002"/>
+        <pointLayout labelOffsetX="-10" labelOffsetY="-20" layerId="0"/>
+    </point>
+    <path name="Point-0001 --- Point-0002" sourcePoint="Point-0001" destinationPoint="Point-0002" length="2484" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <path name="Point-0001 --- Point-0003" sourcePoint="Point-0001" destinationPoint="Point-0003" length="2259" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <path name="Point-0002 --- Point-0001" sourcePoint="Point-0002" destinationPoint="Point-0001" length="2484" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <path name="Point-0002 --- Point-0003" sourcePoint="Point-0002" destinationPoint="Point-0003" length="1746" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <path name="Point-0003 --- Point-0001" sourcePoint="Point-0003" destinationPoint="Point-0001" length="2259" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <path name="Point-0003 --- Point-0002" sourcePoint="Point-0003" destinationPoint="Point-0002" length="1746" maxVelocity="1000" maxReverseVelocity="0" locked="false">
+        <pathLayout connectionType="DIRECT" layerId="0"/>
+    </path>
+    <vehicle name="Vehicle-0001" energyLevelCritical="30" energyLevelGood="90" energyLevelFullyRecharged="95" energyLevelSufficientlyRecharged="40" maxVelocity="1000" maxReverseVelocity="1000" envelopeKey="">
+        <boundingBox length="1000" width="1000" height="1000" referenceOffsetX="0" referenceOffsetY="0"/>
+        <property name="vda5050:interfaceName" value="VDA"/>
+        <property name="vda5050:manufacturer" value="SEER"/>
+        <property name="vda5050:serialNumber" value="AMB-012"/>
+        <property name="vda5050:version" value="2.0"/>
+        <vehicleLayout color="#FF0000"/>
+    </vehicle>
+    <visualLayout name="VLayout" scaleX="50.0" scaleY="50.0">
+        <layer id="0" ordinal="0" visible="true" name="Default layer" groupId="0"/>
+        <layerGroup id="0" name="Default layer group" visible="true"/>
+    </visualLayout>
+    <property name="tcs:modelFileLastModified" value="2026-03-16T06:50:30Z"/>
+</model>
