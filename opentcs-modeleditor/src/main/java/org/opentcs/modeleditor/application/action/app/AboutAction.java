@@ -129,7 +129,7 @@ public class AboutAction
         ),
         JOptionPane.PLAIN_MESSAGE,
         new ImageIcon(
-            getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/jabiltcs_logo.png")
+            getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/jtcs_logo.png")
         )
     );
   }

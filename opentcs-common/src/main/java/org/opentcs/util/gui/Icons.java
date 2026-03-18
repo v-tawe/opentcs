@@ -29,11 +29,11 @@ public final class Icons {
    * File names of the default openTCS window icons.
    */
   private static final List<String> DEFAULT_ICON_FILES = List.of(
-      "opentcs_icon_016.png",
-      "opentcs_icon_032.png",
-      "opentcs_icon_064.png",
-      "opentcs_icon_128.png",
-      "opentcs_icon_256.png"
+      "jtcs_logo_016.png",
+      "jtcs_logo_032.png",
+      "jtcs_logo_064.png",
+      "jtcs_logo_128.png",
+      "jtcs_logo_256.png"
   );
   /**
    * File names of custom window icons that can be provided by a user.

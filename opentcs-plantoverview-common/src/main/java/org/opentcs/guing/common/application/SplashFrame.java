@@ -122,20 +122,21 @@ public class SplashFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("i18n/org/opentcs/plantoverview/system"); // NOI18N
         setTitle(bundle.getString("splashFrame.title.text")); // NOI18N
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 0, 0));
         setIconImages(Icons.getOpenTCSIcons());
         setUndecorated(true);
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        panel.setBackground(new java.awt.Color(255, 255, 255));
+        panel.setBackground(new java.awt.Color(0, 0, 0));
         panel.setLayout(new java.awt.GridBagLayout());
 
-        labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/splash.320x152.gif"))); // NOI18N
+        labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/jtcs_logo.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
         panel.add(labelImage, gridBagConstraints);
 
-        labelMessage.setBackground(new java.awt.Color(255, 255, 255));
+        labelMessage.setBackground(new java.awt.Color(0, 0, 0));
+        labelMessage.setForeground(new java.awt.Color(255, 255, 255));
         labelMessage.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         labelMessage.setText(bundle.getString("splashFrame.label_message.text")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -148,8 +149,8 @@ public class SplashFrame
         gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 4);
         panel.add(labelMessage, gridBagConstraints);
 
-        progressBar.setBackground(new java.awt.Color(255, 255, 255));
-        progressBar.setForeground(new java.awt.Color(153, 153, 255));
+        progressBar.setBackground(new java.awt.Color(0, 0, 0));
+        progressBar.setForeground(new java.awt.Color(255, 255, 255));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
