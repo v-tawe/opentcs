@@ -85,12 +85,6 @@ public class AboutAction
                 Environment.getBaselineVersion()
             )
             + "<br>"
-            + BUNDLE.getFormatted(
-                "aboutAction.optionPane_applicationInformation.message.customization",
-                Environment.getCustomizationName(),
-                Environment.getCustomizationVersion()
-            )
-            + "<br>"
             + BUNDLE.getString(
                 "aboutAction.optionPane_applicationInformation.message.copyright"
             )
