@@ -34,5 +34,5 @@ start /b %JAVA% -enableassertions ^
     -Dsun.java2d.d3d=false ^
     -XX:-OmitStackTraceInFastThrow ^
     -classpath "%OPENTCS_CP%" ^
-    -splash:bin/splash-image.gif ^
+    -splash:bin/jtcs_logo.png ^
     org.opentcs.modeleditor.RunModelEditor

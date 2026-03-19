@@ -1,0 +1,109 @@
+// SPDX-FileCopyrightText: The openTCS Authors
+// SPDX-License-Identifier: MIT
+
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+}
+
+plugins {
+  id 'maven-publish'
+  id 'signing'
+  alias(libs.plugins.spotless)
+  alias(libs.plugins.jacocolog)
+}
+
+apply from: "${rootDir}/gradle/java-project.gradle"
+apply from: "${rootDir}/gradle/java-codequality.gradle"
+apply from: "${rootDir}/gradle/guice-project.gradle"
+apply from: "${rootDir}/gradle/publishing-java.gradle"
+
+apply plugin: 'base'
+apply plugin: 'distribution'
+apply plugin: 'org.barfuin.gradle.jacocolog'
+
+dependencies {
+  implementation project(':opentcs-api-injection')
+  implementation project(':opentcs-common')
+  implementation project(':opentcs-api-base')
+
+  implementation libs.jackson.databind
+  implementation libs.jackson.datatype.jsr310
+
+  implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+
+  runtimeOnly libs.slf4j.jdk14
+
+  testImplementation libs.assertj
+}
+
+// Attributes for the AsciiDoc documentation to include code from source files
+ext.javaSrcDir = sourceSets.main.java.srcDirs[0]
+ext.collectableDistDir = new File(buildDir, 'install')
+
+distributions {
+  main {
+    contents.from(jar)
+    contents.from(sourcesJar)
+    contents.from(javadoc){
+      into('api')
+    }
+  }
+}
+
+distZip {
+  dependsOn javadoc
+  archiveClassifier = 'bin'
+}
+
+distTar {
+  enabled = false
+  dependsOn javadoc
+  archiveClassifier = 'bin'
+}
+
+build {
+  dependsOn installDist
+}
+
+task distSrcZip(type: Zip) {
+  archiveClassifier = 'src'
+  from "${rootDir}"
+
+  includes << 'config/**'
+  includes << 'gradle/**'
+  includes << 'src/**'
+  includes << '.nb-gradle-properties'
+  includes << '*.gradle'
+  includes << 'gradlew'
+  includes << 'gradlew.bat'
+
+  excludes << '.gitlab'
+  excludes << '.gradle'
+  excludes << 'build'
+}
+
+artifacts {
+  archives distZip
+  archives distSrcZip
+  archives sourcesJar
+}
+
+// Task to run the VDA5050 v1.1 simulator
+task runV1dot1Simulator(type: JavaExec) {
+  main = 'org.opentcs.commadapter.vehicle.vda5050.v1_1.simulation.VehicleSimulator'
+  classpath = sourceSets.main.runtimeClasspath
+  standardInput = System.in
+}
+
+// Task to run the VDA5050 v2.0 simulator
+task runV2dot0Simulator(type: JavaExec) {
+  main = 'org.opentcs.commadapter.vehicle.vda5050.v2_0.simulation.VehicleSimulator'
+  classpath = sourceSets.main.runtimeClasspath
+  standardInput = System.in
+}

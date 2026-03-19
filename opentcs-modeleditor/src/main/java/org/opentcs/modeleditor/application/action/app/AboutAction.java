@@ -85,12 +85,6 @@ public class AboutAction
                 Environment.getBaselineVersion()
             )
             + "<br>"
-            + BUNDLE.getFormatted(
-                "aboutAction.optionPane_applicationInformation.message.customization",
-                Environment.getCustomizationName(),
-                Environment.getCustomizationVersion()
-            )
-            + "<br>"
             + BUNDLE.getString(
                 "aboutAction.optionPane_applicationInformation.message.copyright"
             )
@@ -129,7 +123,7 @@ public class AboutAction
         ),
         JOptionPane.PLAIN_MESSAGE,
         new ImageIcon(
-            getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/openTCS.300x132.gif")
+            getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/jtcs_logo.png")
         )
     );
   }

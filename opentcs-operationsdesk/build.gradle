@@ -15,6 +15,7 @@ ext.collectableDistDir = new File(buildDir, 'install')
 
 dependencies {
   api project(':opentcs-commadapter-loopback')
+  api project(':opentcs-commadapter-seer')
   api project(':opentcs-common')
   api project(':opentcs-impl-configuration-gestalt')
   api project(':opentcs-plantoverview-common')
@@ -56,5 +57,5 @@ run {
                     'opentcs.configuration.reload.interval':'10000',\
                     'opentcs.configuration.provider':'gestalt'])
   jvmArgs('-XX:-OmitStackTraceInFastThrow',\
-          '-splash:bin/splash-image.gif')
+          '-splash:bin/jtcs_logo.png')
 }

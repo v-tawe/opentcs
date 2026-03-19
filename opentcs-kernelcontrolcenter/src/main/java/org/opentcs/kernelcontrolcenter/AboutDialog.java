@@ -68,7 +68,7 @@ public class AboutDialog
     logoPanel.setLayout(new java.awt.BorderLayout());
 
     opentcsLogoLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    opentcsLogoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/kernelcontrolcenter/res/logos/opentcs.gif"))); // NOI18N
+    opentcsLogoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/kernelcontrolcenter/res/logos/jtcs_logo.png"))); // NOI18N
     logoPanel.add(opentcsLogoLbl, java.awt.BorderLayout.CENTER);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
@@ -82,7 +82,7 @@ public class AboutDialog
     opentcsContactPanel.setLayout(new java.awt.GridBagLayout());
 
     opentcsLbl.setFont(opentcsLbl.getFont().deriveFont(opentcsLbl.getFont().getStyle() | java.awt.Font.BOLD));
-    opentcsLbl.setText("open Transportation Control System");
+    opentcsLbl.setText("Jabil Transportation Control System");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridwidth = 2;
     gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
@@ -127,7 +127,7 @@ public class AboutDialog
     gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
     opentcsContactPanel.add(homepageLbl, gridBagConstraints);
 
-    homepageTxtLbl.setText("https://www.opentcs.org/");
+    homepageTxtLbl.setText("https://www.jabil.com/");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 1;
     gridBagConstraints.gridy = 3;
@@ -142,7 +142,7 @@ public class AboutDialog
     gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
     opentcsContactPanel.add(emailLbl, gridBagConstraints);
 
-    emailTxtLbl.setText("business-info@opentcs.org");
+    emailTxtLbl.setText("wx_automation@jabil.com");
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 1;
     gridBagConstraints.gridy = 4;
@@ -153,34 +153,6 @@ public class AboutDialog
     contactPanel.add(opentcsContactPanel);
 
     imlPanel.setLayout(new java.awt.GridBagLayout());
-
-    fraunhoferImlLbl.setFont(fraunhoferImlLbl.getFont().deriveFont(fraunhoferImlLbl.getFont().getStyle() | java.awt.Font.BOLD));
-    fraunhoferImlLbl.setText(bundle.getString("aboutDialog.label_fraunhoferIml.text")); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 0;
-    gridBagConstraints.gridwidth = 2;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-    gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-    gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-    imlPanel.add(fraunhoferImlLbl, gridBagConstraints);
-
-    homepageImlLbl.setText(bundle.getString("aboutDialog.label_homepage.text")); // NOI18N
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 0;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-    imlPanel.add(homepageImlLbl, gridBagConstraints);
-
-    homepageImlTxtLbl.setText("http://www.iml.fraunhofer.de/");
-    gridBagConstraints = new java.awt.GridBagConstraints();
-    gridBagConstraints.gridx = 1;
-    gridBagConstraints.gridy = 1;
-    gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-    gridBagConstraints.insets = new java.awt.Insets(0, 6, 0, 0);
-    imlPanel.add(homepageImlTxtLbl, gridBagConstraints);
-
-    contactPanel.add(imlPanel);
 
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 0;

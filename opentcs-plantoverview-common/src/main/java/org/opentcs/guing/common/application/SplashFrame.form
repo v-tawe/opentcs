@@ -52,7 +52,7 @@
         <Component class="javax.swing.JLabel" name="labelImage">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/org/opentcs/guing/res/symbols/openTCS/splash.320x152.gif"/>
+              <Image iconType="3" name="/org/opentcs/guing/res/symbols/openTCS/jtcs_logo.png"/>
             </Property>
           </Properties>
           <Constraints>

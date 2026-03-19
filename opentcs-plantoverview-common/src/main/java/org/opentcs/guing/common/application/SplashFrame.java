@@ -130,7 +130,7 @@ public class SplashFrame
         panel.setBackground(new java.awt.Color(255, 255, 255));
         panel.setLayout(new java.awt.GridBagLayout());
 
-        labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/splash.320x152.gif"))); // NOI18N
+        labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/opentcs/guing/res/symbols/openTCS/jtcs_logo.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
         panel.add(labelImage, gridBagConstraints);

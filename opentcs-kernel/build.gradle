@@ -17,6 +17,7 @@ dependencies {
   api project(':opentcs-api-injection')
   api project(':opentcs-common')
   api project(':opentcs-commadapter-loopback')
+  api project(':opentcs-commadapter-seer')
   api project(':opentcs-peripheralcommadapter-loopback')
   api project(':opentcs-strategies-default')
   api project(':opentcs-impl-configuration-gestalt')
@@ -24,7 +25,7 @@ dependencies {
   api project(':opentcs-kernel-extension-rmi-services')
 
   implementation libs.huxhorn.sulky.ulid
-
+  implementation project(':opentcs-commadapter-vda5050')
   runtimeOnly libs.slf4j.jdk14
 }
 

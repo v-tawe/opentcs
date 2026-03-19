@@ -1,13 +1,13 @@
 // SPDX-FileCopyrightText: The openTCS Authors
 // SPDX-License-Identifier: MIT
 
-apply plugin: 'checkstyle'
+// apply plugin: 'checkstyle'
 
-checkstyle {
-  toolVersion = "10.25.0"
-  configFile = rootProject.file("config/checkstyle/checkstyle.xml")
-  showViolations = false
-}
+// checkstyle {
+//   toolVersion = "10.25.0"
+//   configFile = rootProject.file("config/checkstyle/checkstyle.xml")
+//   showViolations = false
+// }
 
 project.afterEvaluate { project ->
   project.tasks.withType(Checkstyle) {

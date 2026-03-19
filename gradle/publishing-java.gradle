@@ -20,7 +20,7 @@ publishing {
 
         name = project.name
         description = project.name
-        url = "https://www.opentcs.org/"
+        url = "https://www.jabil.com/"
 
         licenses {
           license {
@@ -31,10 +31,10 @@ publishing {
 
         developers {
           developer {
-            name = "The openTCS Authors"
-            email = "info@opentcs.org"
-            organization = "The open Transportation Control System"
-            organizationUrl = "https://www.opentcs.org/"
+            name = "JTCS"
+            email = "wxautomation@jabil.com"
+            organization = "Jabil Wuxi Automation"
+            organizationUrl = "https://www.jabil.com/"
           }
         }
 
